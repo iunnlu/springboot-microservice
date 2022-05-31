@@ -27,7 +27,7 @@ public class UsersController {
         return "Working on port ".concat(env.getProperty("local.server.port"));
     }
 
-    @PostMapping()
+    @PostMapping("/register")
     public ResponseEntity<CreateUserResponseModel> createUser(@Valid @RequestBody CreateUserRequestModel createUser) {
         UserDto userDto = modelMapper.map(createUser, UserDto.class);
         CreateUserResponseModel returnUser = modelMapper.map(usersService.createUser(userDto), CreateUserResponseModel.class);
