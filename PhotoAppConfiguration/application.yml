@@ -1,0 +1,5 @@
+gateway:
+  ip: 192.168.2.76
+token:
+  expiration-time: 864000000
+  secret: hfgry463hf746hf573ydh475fhy5739
